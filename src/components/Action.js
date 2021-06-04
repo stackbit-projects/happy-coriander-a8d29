@@ -48,23 +48,7 @@ export default class Action extends React.Component {
                     label
                 }
             </Link>
-                        <Link href={withPrefix(url)} {...attrs} className={classes}>
-                {(hasIcon && icon) ? (
-                    <React.Fragment>
-                        <Icon icon={icon} />
-                        <span
-                            className={classNames({
-                                'order-first': iconPos === 'right',
-                                'sr-only': iconPos === 'center'
-                            })}
-                        >
-                            {label}
-                        </span>
-                    </React.Fragment>
-                ) :
-                    label
-                }
-            </Link>
+            
         );
     }
 }
